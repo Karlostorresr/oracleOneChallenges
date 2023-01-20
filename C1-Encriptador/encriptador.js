@@ -7,7 +7,8 @@ function encriptar(){
     mensajeEncriptado=mensajeEncriptado.replaceAll("u","ufat");
 
     document.getElementById('areaDeEncriptado').innerHTML=mensajeEncriptado;
-    document.getElementById('btnCopiar').style.display="block"
+    document.getElementById('btnCopiar').style.display="block";
+    document.getElementById('mensaje').innerHTML="Tu mensaje encriptado es; "
 }
 function desencriptar(){
     let textoUsuario=document.getElementById('mensajeUsuario').value;
@@ -19,7 +20,8 @@ function desencriptar(){
     mensajeDesencriptado=mensajeDesencriptado.replaceAll("enter","e");
 
     document.getElementById('areaDeEncriptado').innerHTML=mensajeDesencriptado;
-    document.getElementById('btnCopiar').style.display="block"
+    document.getElementById('btnCopiar').style.display="block";
+    document.getElementById('mensaje').innerHTML="Tu mensaje es;";
 }
 function copiarTexto(){
     let textoCopiado=document.getElementById('areaDeEncriptado').value;
