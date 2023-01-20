@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encriptador challenge</title>
+    <title>Encrypter challenge</title>
+    <link rel="Stylesheet" href="encriptador.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Quicksand:wght@600&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
+    <nav class="navbar">
+        <img class="logo" src="/Multimedia/Vector.png">
+        <h1>Karlos Torres Encrypter</h1>
+    </nav>
+
+    <div class="main-Container">
+        <div class="section1">
+            <textarea class="textArea" id="mensajeUsuario" rows="30" cols="60" placeholder="Ingrese texto que quiera Encriptar/Desencriptar"></textarea>
+            <div>
+                <h6 class="aviso"> Solo letras minusculas y sin acentos</h6>
+                <button class="btnEncriptar btn" id="btnEncriptar" onclick="encriptar()">Encriptar</button>
+                <button class="btn btnDesencriptar" id="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="section2">
+            <img class ="center" id="imagen" src="/Multimedia/muñeco.png">
+            <h3 class="center" id="mensaje">Ningun mensaje fue encontrado</h3>
+            <textarea class="textArea" rows="12" cols="60" id="areaDeEncriptado" readonly="true"></textarea>
+            <br>
+            <button class="btn" id="btnCopiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+    </div>
     
+    <script src="/encriptador.js"></script>
 </body>
 </html>
